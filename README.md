@@ -1,5 +1,7 @@
 # Ember-CLI-Opinionated
 
+*The Enhanced Ember Application Blueprint*
+
 This addon is the Quick Start guide to the best tools the Ember community has to offer! Ember-CLI-Opinionated takes on 
 common decisions you need to make to get the most out of your app and gives you an answer. The following questions 
 are all answered by this addon:
@@ -23,12 +25,25 @@ The following command will install this addon and run the included blueprint to 
 
 `ember install ember-cli-opinionated`
 
+Subsequent updates to this addon can be pulled in by updating the version of this package and running the following:
+
+`ember g ember-cli-opinionated`
+
+This will execute the included blueprint, setting up your app for the win!
+
+Once you have installed this package, you will need to go through some minor setup to begin utilizing the included
+addons. Your app should be fully operational in the meantime, but the addons won't be usable until setup is completed.
+Please refer to the sections below and the individual READMEs for information on each addon's setup (where applicable).
+
 ## Compatibility
 
 Each of the included addons has its own compatibility with different versions of Ember, Ember-CLI, and so on. We
 recommend checking the individual repositories for more information to make sure your app is compatible with the latest
 versions of each project. The intent of this addon is to enhance a brand-new app generated with Ember-CLI, but
 that doesn't mean you can't juice up your existing application, either!
+
+As of now, Ember 1.13+ should be supported without issues. Earlier versions of Ember may also be supported, 
+but have not been explicitly tested. If you are on 1.12-, please test and let us know if there are issues.
 
 ## What's Inside The Box?
 
