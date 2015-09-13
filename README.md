@@ -46,6 +46,7 @@ any projects that would receive this rating, as it is counter-intuitive to the q
 
 ### [ember-cli-blanket](http://jhawk.co/ember-cli-blanket)
 _Minor Setup_
+
 _Additional Install: [`blanket`](http://jhawk.co/blanket-js)_
 
 Wraps Blanket.js to provide code coverage for Ember apps. Easy integration with 
@@ -54,12 +55,14 @@ The [README](https://github.com/sglanzer/ember-cli-blanket/blob/master/README.md
 
 ### [ember-cli-sass-pods](http://jhawk.co/ember-cli-sass-pods)
 _Trivial Setup_
+
 _Additional Install: [`ember-cli-sass`](http://jhawk.co/ember-cli-sass)_
 
 Enables usage of SCSS styles in pod directories. Also includes generators for these files!
 
 ### [ember-cpm](http://jhawk.co/ember-cpm)
 _No Setup_
+
 _Additional Install: N/A_
 
 Provides Computed Property Macros, including 
@@ -67,6 +70,7 @@ Provides Computed Property Macros, including
 
 ### [ember-feature-flags](http://jhawk.co/ember-feature-flags)
 _Minor Setup_
+
 _Additional Install: N/A_
 
 Provides an injected `features` property to your routes, controllers, and components. 
@@ -75,6 +79,7 @@ The [README](https://github.com/kategengler/ember-feature-flags/blob/master/READ
 
 ### [ember-metrics](http://jhawk.co/ember-metrics)
 _Minor Setup_
+
 _Additional Install: N/A_
 
 Allows you to send data to multiple analytics integrations without re-implementing new API.
@@ -84,7 +89,8 @@ set up the instrumentation to your favorite analytics reporting tool.
 
 ### [ember-moment](http://jhawk.co/ember-moment)
 _No Setup_
-_Additional Install: [`moment`](http://jhawk.co/moment-js)
+
+_Additional Install: [`moment`](http://jhawk.co/moment-js)_
 
 Provides template helpers and computed property macros for date parsing, as well as 
 including `moment.js` as an ES6 module import.
@@ -92,13 +98,17 @@ including `moment.js` as an ES6 module import.
 ### [ember-responsive](http://jhawk.co/ember-responsive)
 _No Setup_
 
+_Additional Install: N/A_
+
 Uses responsive media queries to inject screen layout information throughout Ember applications.
 Needs Polyfill for [compatibility](http://caniuse.com/#feat=matchmedia) with IE 8/9 or Opera Mini.
 
 ### [ember-suave](http://jhawk.co/ember-suave)
 _No Setup_
 
-Enforce code styles using [JSCS](http://jhawk.co/js-cs). Defaults to the 
+_Additional Install: N/A_
+
+Enforce code styles using [`JSCS`](http://jhawk.co/js-cs). Defaults to the 
 DockYard [JavaScript](https://github.com/dockyard/styleguides/blob/master/javascript.md) and 
 [Ember](https://github.com/dockyard/styleguides/blob/master/ember.md) Style Guides, but rules are configurable.
 
