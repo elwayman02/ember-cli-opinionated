@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-opinionated",
   "version": "0.0.1",
-  "description": "An opinionated blueprint for ambitious Ember apps.",
+  "description": "An opinionated blueprint for ambitious Ember apps",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,12 +11,18 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elwayman02/ember-cli-opinionated.git"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
   "author": "Jordan Hawker <hawker.jordan@gmail.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elwayman02/ember-cli-opinionated/issues"
+  }
   "devDependencies": {
     "broccoli-asset-rev": "^2.1.2",
     "ember-cli": "1.13.8",
@@ -39,7 +45,8 @@
     "ember-try": "~0.0.8"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "ember"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.3"
