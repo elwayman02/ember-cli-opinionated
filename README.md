@@ -37,6 +37,12 @@ Please refer to the sections below and the individual READMEs for information on
 
 ## Compatibility
 
+Ember-CLI-Opinionated's blueprint relies on `addAddonsToProject`, a 
+[new feature](https://github.com/ember-cli/ember-cli/pull/4839) to Ember-CLI. For older Ember-CLI versions (<=1.13.8), 
+a polyfill has been provided by chaining `addAddonToProject`. However, there are some slight problems with 
+how that works, and some packages may not be properly saved to your `package.json` and `bower.json`. 
+So feel free to use this addon regardless, but check to make sure the dependencies are saved.
+
 Each of the included addons has its own compatibility with different versions of Ember, Ember-CLI, and so on. We
 recommend checking the individual repositories for more information to make sure your app is compatible with the latest
 versions of each project. The intent of this addon is to enhance a brand-new app generated with Ember-CLI, but
@@ -105,7 +111,8 @@ set up the instrumentation to your favorite analytics reporting tool.
 ### [ember-moment](http://jhawk.co/ember-moment)
 _No Setup_
 
-_Additional Install: [`moment`](http://jhawk.co/moment-js)_
+_Additional Install: [`ember-cli-moment-shim`](http://jhawk.co/ember-cli-moment-shim), 
+[`moment`](http://jhawk.co/moment-js), & [`moment-timezone`](http://jhawk.co/moment-timezone)_
 
 Provides template helpers and computed property macros for date parsing, as well as 
 including `moment.js` as an ES6 module import.
