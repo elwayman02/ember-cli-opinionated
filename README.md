@@ -29,7 +29,9 @@ Subsequent updates to this addon can be pulled in by updating the version of thi
 
 `ember g ember-cli-opinionated`
 
-This will execute the included blueprint, setting up your app for the win!
+This will execute the included blueprint, setting up your app for the win! If you want to enhance your app configuration
+with some additional awesomeness, simply say yes to the first question to fill out a short questionnaire that will
+allow us to improve your app even more.
 
 Once you have installed this package, you will need to go through some minor setup to begin utilizing the included
 addons. Your app should be fully operational in the meantime, but the addons won't be usable until setup is completed.
@@ -51,12 +53,20 @@ that doesn't mean you can't juice up your existing application, either!
 As of now, Ember 1.13+ should be supported without issues. Earlier versions of Ember may also be supported, 
 but have not been explicitly tested. If you are on 1.12-, please test and let us know if there are issues.
 
+_Note: A [bug in Ember-CLI](https://github.com/ember-cli/ember-cli/issues/4876) causes npm to attempt 
+installing `ember-cli-sass` twice. This will throw a large number of concerning-looking errors to your console
+but should not cause any real problems with installation._
+
 ## What's Inside The Box?
 
 Ember-CLI-Opinionated packs a number of essential addons to use in your Ember application. Below you will find each
 dependency listed along with a short description and a link to the main repositories. Any further dependencies
-installed by the addons' blueprints will be listed below the section header. Additionally, the amount of
-extra setup needed to begin using the addon is judged for you. Our rating system is as follows:
+installed by the addons' blueprints will be listed below the section header. Optional dependencies that are included
+by our Enhanced Setup will be labeled as *Enhanced* with the name of their associated config. Some of these additional
+projects may be WIP, alpha, or otherwise experimental, but you should be able to begin using them right away for
+new app development, as long as you are cognizant of this fact.
+
+The amount of additional setup needed to begin using the addon is judged for you. Our rating system is as follows:
 
 _No Setup_ - You can begin using this addon immediately without any additional configuration necessary.
 _Trivial Setup_ - You may have to add 1-2 easy lines of code to complete setup.
@@ -89,6 +99,19 @@ _Additional Install: N/A_
 Provides Computed Property Macros, including 
 [Composable Macros](https://github.com/cibernox/ember-cpm/blob/master/README.md#composable-computed-property-macros)!
 
+### [ember-e3](http://jhawk.co/ember-e3)
+*Enhanced: Analytics*
+
+_No Setup_
+
+_Additional Install: N/A_
+
+An Ember-first data visualization library that combines d3-like math with Ember's "data down/actions up" data binding
+paradigm. Supports rendering to both Canvas *and* SVG!
+
+*Note: This is a beta product that is still a WIP, with many more features on the way. Additionally, it only supports
+Ember 1.13+, sorry!*
+
 ### [ember-feature-flags](http://jhawk.co/ember-feature-flags)
 _Minor Setup_
 
@@ -97,6 +120,20 @@ _Additional Install: N/A_
 Provides an injected `features` property to your routes, controllers, and components. 
 
 The [README](https://github.com/kategengler/ember-feature-flags/blob/master/README.md) details the easy ENV config.
+
+### [ember-gestures](http://jhawk.co/ember-gestures)
+*Enhanced: Mobile-Friendly*
+
+_Trivial Setup_
+
+_Additional Install: [`hammer.js`](http://jhawk.co/hammer-js-repo) & [`hammer-time`](http://jhawk.co/hammer-time-js)_
+
+Provides gesture and mobile support for Ember applications.
+
+*Note: `ember-gestures` relies on the yet-to-be-released 2.1.x version of `hammer.js`.* In order for this package to work 
+properly, you must install the latest `develop` branch from their repository:
+
+`bower install --save runspired/hammer.js#develop`
 
 ### [ember-metrics](http://jhawk.co/ember-metrics)
 _Minor Setup_
@@ -116,6 +153,18 @@ _Additional Install: [`ember-cli-moment-shim`](http://jhawk.co/ember-cli-moment-
 
 Provides template helpers and computed property macros for date parsing, as well as 
 including `moment.js` as an ES6 module import.
+
+### [ember-paper](http://jhawk.co/ember-paper)
+*Enhanced: Material Design*
+
+_Trivial Setup_
+
+_Additional Install: [`ember-cli-sass`](http://jhawk.co/ember-cli-sass), [`hammerjs`](http://jhawk.co/hammer-js-repo)
+ & [`matchMedia`](http://jhawk.co/match-media-polyfill)
+ 
+An Ember-first implementation of Google's [Material Design](http://jhawk.co/google-md) spec. This is an ambitious
+project that does not yet fully support every part of the spec, but feel free to check out their
+[demo](http://jhawk.co/ember-paper-demo) to see how incredibly far they've gotten!
 
 ### [ember-responsive](http://jhawk.co/ember-responsive)
 _No Setup_
