@@ -15,6 +15,47 @@ module.exports = {
       'ember-suave'
     ];
 
+    var updatePrompt = {
+      type: 'confirm',
+      name: 'answer',
+      choices: [
+        { key: 'y', name: 'Yes', value: 'yes' },
+        { key: 'n', name: 'No', value: 'no' }
+      ]
+    };
+
+    updatePrompt.message = 'Would you like to enhance your ember-cli-opinionated setup?';
+    return this.ui.prompt(updatePrompt).then(function (response) {
+      if (response.answer) {
+        this.ui.writeLine('Tell us what extra features your app needs:');
+        updatePrompt.message = 'Analytics?';
+        return this.ui.prompt(updatePrompt).then(function (analyticResp) {
+          if (analyticResp.answer) {
+            packages.push('ember-e3');
+          }
+
+          updatePrompt.message = 'Mobile-Friendly?';
+          return this.ui.prompt(updatePrompt).then(function (mobileResp) {
+            if (mobileResp.answer) {
+              packages.push('ember-gestures');
+            }
+
+            updatePrompt.message = 'Material Design?';
+            return this.ui.prompt(updatePrompt).then(function (designResp) {
+              if (designResp.answer) {
+                packages.push('ember-paper');
+              }
+
+              return this.addOpinionatedPackagesToProject(packages);
+            }.bind(this));
+          }.bind(this));
+        }.bind(this));
+      }
+      return this.addOpinionatedPackagesToProject(packages);
+    }.bind(this));
+  },
+
+  addOpinionatedPackagesToProject: function(packages) {
     if (typeof this.addAddonsToProject === 'function') { // newer versions of ember-cli
       return this.addAddonsToProject({
         packages: packages
