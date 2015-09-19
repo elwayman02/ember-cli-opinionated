@@ -62,7 +62,7 @@ but should not cause any real problems with installation._
 Ember-CLI-Opinionated packs a number of essential addons to use in your Ember application. Below you will find each
 dependency listed along with a short description and a link to the main repositories. Any further dependencies
 installed by the addons' blueprints will be listed below the section header. Optional dependencies that are included
-by our Enhanced Setup will be labeled as *Enhanced* with the name of their associated config. Some of these additional
+by our Enhanced Setup will be labeled as **Enhanced** with the name of their associated config. Some of these additional
 projects may be WIP, alpha, or otherwise experimental, but you should be able to begin using them right away for
 new app development, as long as you are cognizant of this fact.
 
@@ -100,17 +100,17 @@ Provides Computed Property Macros, including
 [Composable Macros](https://github.com/cibernox/ember-cpm/blob/master/README.md#composable-computed-property-macros)!
 
 ### [ember-e3](http://jhawk.co/ember-e3)
-*Enhanced: Analytics*
+**Enhanced: Analytics**
 
 _No Setup_
 
 _Additional Install: N/A_
 
 An Ember-first data visualization library that combines d3-like math with Ember's "data down/actions up" data binding
-paradigm. Supports rendering to both Canvas *and* SVG!
+paradigm. Supports rendering to both Canvas _and_ SVG!
 
-*Note: This is a beta product that is still a WIP, with many more features on the way. Additionally, it only supports
-Ember 1.13+, sorry!*
+_Note: This is a beta product that is still a WIP, with many more features on the way. Additionally, it only supports
+Ember 1.13+, sorry!_
 
 ### [ember-feature-flags](http://jhawk.co/ember-feature-flags)
 _Minor Setup_
@@ -122,7 +122,7 @@ Provides an injected `features` property to your routes, controllers, and compon
 The [README](https://github.com/kategengler/ember-feature-flags/blob/master/README.md) details the easy ENV config.
 
 ### [ember-gestures](http://jhawk.co/ember-gestures)
-*Enhanced: Mobile-Friendly*
+**Enhanced: Mobile-Friendly**
 
 _Trivial Setup_
 
@@ -130,8 +130,8 @@ _Additional Install: [`hammer.js`](http://jhawk.co/hammer-js-repo) & [`hammer-ti
 
 Provides gesture and mobile support for Ember applications.
 
-*Note: `ember-gestures` relies on the yet-to-be-released 2.1.x version of `hammer.js`.* In order for this package to work 
-properly, you must install the latest `develop` branch from their repository:
+_Note: `ember-gestures` relies on the yet-to-be-released 2.1.x version of `hammer.js`. In order for this package to work 
+properly, you must install the latest `develop` branch from their repository:_
 
 `bower install --save runspired/hammer.js#develop`
 
@@ -155,7 +155,7 @@ Provides template helpers and computed property macros for date parsing, as well
 including `moment.js` as an ES6 module import.
 
 ### [ember-paper](http://jhawk.co/ember-paper)
-*Enhanced: Material Design*
+**Enhanced: Material Design**
 
 _Trivial Setup_
 
