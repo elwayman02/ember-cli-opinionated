@@ -75,6 +75,13 @@ straightforward and explained well in their README.
 _Major Setup_ - A significant amount of work is needed to begin using this addon. Our goal is not to include
 any projects that would receive this rating, as it is counter-intuitive to the quick-start nature of this project.
 
+### [ember-cli-autoprefixer](http://jhawk.co/ember-cli-autoprefixer)
+_No Setup_
+
+_Additional Install: N/A_
+
+Runs the styles of your Ember-CLI application through [`autoprefixer`](http://jhawk.co/autoprefixer-js).
+
 ### [ember-cli-blanket](http://jhawk.co/ember-cli-blanket)
 _Minor Setup_
 
