@@ -1,8 +1,13 @@
+function extend(obj, src) {
+  Object.keys(src).forEach(function(key) { obj[key] = src[key]; });
+  return obj;
+}
+
 module.exports = {
   description: 'Set up additional packages for Ember apps',
   normalizeEntityName: function() {}, // no-op since we're just adding dependencies
 
-  afterInstall: function(options) {
+  afterInstall: function () {
     var packages = [
       'ember-cli-autoprefixer',
       'ember-cli-blanket',
@@ -12,7 +17,8 @@ module.exports = {
       { name: 'ember-metrics', target: '0.1.5' },
       'ember-moment',
       'ember-responsive',
-      'ember-suave'
+      'ember-suave',
+      'ember-truth-helpers'
     ];
 
     var updatePrompt = {
@@ -24,38 +30,42 @@ module.exports = {
       ]
     };
 
-    updatePrompt.message = 'Would you like to enhance your ember-cli-opinionated setup?';
-    return this.ui.prompt(updatePrompt).then(function (response) {
-      if (response.answer) {
-        this.ui.writeLine('Tell us what extra features your app needs:');
-        updatePrompt.message = 'Analytics?';
-        return this.ui.prompt(updatePrompt).then(function (analyticResp) {
-          if (analyticResp.answer) {
-            packages.push('ember-e3');
-          }
+    var prompts = [
+      extend({ message: 'Would you like to enhance your ember-cli-opinionated setup?', packages: packages }, updatePrompt),
+      extend({ message: 'Analytics?', packages: ['ember-e3'] }, updatePrompt),
+      extend({ message: 'Mobile-Friendly?', packages: ['ember-gestures'] }, updatePrompt),
+      extend({ message: 'Material Design?', packages: ['ember-paper'] }, updatePrompt)
+    ];
 
-          updatePrompt.message = 'Mobile-Friendly?';
-          return this.ui.prompt(updatePrompt).then(function (mobileResp) {
-            if (mobileResp.answer) {
-              packages.push('ember-gestures');
-            }
-
-            updatePrompt.message = 'Material Design?';
-            return this.ui.prompt(updatePrompt).then(function (designResp) {
-              if (designResp.answer) {
-                packages.push('ember-paper');
-              }
-
-              return this.addOpinionatedPackagesToProject(packages);
-            }.bind(this));
-          }.bind(this));
-        }.bind(this));
-      }
-      return this.addOpinionatedPackagesToProject(packages);
-    }.bind(this));
+    return this.promptUserForOpinions(packages, prompts);
   },
 
-  addOpinionatedPackagesToProject: function(packages) {
+  promptUserForOpinions: function (packages, prompts) {
+
+    var done = false;
+
+    return prompts.reduce(function (prev, prompt, index) {
+      if (done) { // User said no to the first question, skip the rest
+        return prev;
+      }
+      return prev.then(function (response) {
+        if (index) { // True if user is not on the first question
+          if (response.answer) { // User answered yes to the question
+            packages = packages.concat(prompt.packages);
+          }
+        } else if (!response.answer) {
+          done = true;
+          return this.addOpinionatedPackagesToProject(packages);
+        }
+        if (index < prompts.length-1) { // Keep giving prompts until the last iteration
+          return this.ui.prompt(prompts[index+1]);
+        }
+        return this.addOpinionatedPackagesToProject(packages);
+      }.bind(this));
+    }.bind(this), this.ui.prompt(prompts[0]));
+  },
+
+  addOpinionatedPackagesToProject: function (packages) {
     if (typeof this.addAddonsToProject === 'function') { // newer versions of ember-cli
       return this.addAddonsToProject({
         packages: packages

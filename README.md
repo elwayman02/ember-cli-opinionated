@@ -190,6 +190,13 @@ Enforce code styles using [`JSCS`](http://jhawk.co/js-cs). Defaults to the
 DockYard [JavaScript](https://github.com/dockyard/styleguides/blob/master/javascript.md) and 
 [Ember](https://github.com/dockyard/styleguides/blob/master/ember.md) Style Guides, but rules are configurable.
 
+### [ember-truth-helpers](http://jhawk.co/ember-truth-helpers)
+_No Setup_
+
+_Additional Install: N/A_
+
+HTMLBars template helpers for additional truth logic in if and unless statements.
+
 ## Contributing
 
 [CONTRIBUTING.md](https://github.com/elwayman02/ember-cli-opinionated/blob/master/CONTRIBUTING.md) details how to contribute to this project.
