@@ -110,7 +110,7 @@ _No Setup_
 _Additional Install: N/A_
 
 _Note: `ember-cpm` is not currently installed by Ember-CLI-Opinionated, pending its [update](https://github.com/cibernox/ember-cpm/pull/125) 
-to Ember 2.x compatibility.
+to Ember 2.x compatibility._
 
 Provides Computed Property Macros, including 
 [Composable Macros](https://github.com/cibernox/ember-cpm/blob/master/README.md#composable-computed-property-macros)!
