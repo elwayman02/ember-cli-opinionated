@@ -11,6 +11,7 @@ module.exports = {
     var packages = [
       'ember-cli-autoprefixer',
       'ember-cli-blanket',
+      'ember-cli-sass',
       'ember-cpm',
       'ember-feature-flags',
       { name: 'ember-metrics', target: '0.1.5' },
