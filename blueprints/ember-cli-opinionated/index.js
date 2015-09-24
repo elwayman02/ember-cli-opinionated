@@ -12,7 +12,7 @@ module.exports = {
       'ember-cli-autoprefixer',
       'ember-cli-blanket',
       'ember-cli-sass',
-      'ember-cpm',
+      //'ember-cpm',
       'ember-feature-flags',
       { name: 'ember-metrics', target: '0.1.5' },
       'ember-moment',
@@ -35,7 +35,8 @@ module.exports = {
       extend({ message: 'Pods?', packages: ['ember-cli-sass-pods'] }, updatePrompt),
       extend({ message: 'Analytics?', packages: ['ember-e3'] }, updatePrompt),
       extend({ message: 'Mobile-Friendly?', packages: ['ember-gestures'] }, updatePrompt),
-      extend({ message: 'Material Design?', packages: ['ember-paper'] }, updatePrompt)
+      extend({ message: 'Material Design?', packages: ['ember-paper'] }, updatePrompt),
+      extend({ message: 'Animations?', packages: ['liquid-fire'] }, updatePrompt)
     ];
 
     return this.promptUserForOpinions(packages, prompts);
@@ -55,6 +56,8 @@ module.exports = {
           } else if (!response.answer) {
             done = true;
             return this.addOpinionatedPackagesToProject(packages);
+          } else {
+            this.ui.writeLine('Tell us what extra features your app needs:');
           }
           if (index < prompts.length - 1) { // Keep giving prompts until the last iteration
             return this.ui.prompt(prompts[index + 1]);

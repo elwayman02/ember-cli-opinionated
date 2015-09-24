@@ -96,6 +96,8 @@ Wraps Blanket.js to provide code coverage for Ember apps. Easy integration with
 The [README](https://github.com/sglanzer/ember-cli-blanket/blob/master/README.md) has details on configuration of the addon.
 
 ### [ember-cli-sass-pods](http://jhawk.co/ember-cli-sass-pods)
+**Enhanced: Pods**
+
 _Trivial Setup_
 
 _Additional Install: [`ember-cli-sass`](http://jhawk.co/ember-cli-sass)_
@@ -106,6 +108,9 @@ Enables usage of SCSS styles in pod directories. Also includes generators for th
 _No Setup_
 
 _Additional Install: N/A_
+
+_Note: `ember-cpm` is not currently installed by Ember-CLI-Opinionated, pending its [update](https://github.com/cibernox/ember-cpm/pull/125) 
+to Ember 2.x compatibility.
 
 Provides Computed Property Macros, including 
 [Composable Macros](https://github.com/cibernox/ember-cpm/blob/master/README.md#composable-computed-property-macros)!
@@ -200,6 +205,17 @@ _No Setup_
 _Additional Install: N/A_
 
 HTMLBars template helpers for additional truth logic in if and unless statements.
+
+### [liquid-fire](http://jhawk.co/liquid-fire)
+**Enhanced: Animations**
+
+_Minor Setup_
+
+_Additional Install: N/A_
+
+Comprehensive animation support for ambitious Ember applications. Replace your outlets and other HTMLbars helpers
+with the `liquid-fire` versions to enable support for adding transitional animations throughout your application.
+Their [interactive documentation](http://jhawk.co/liquid-fire-docs) provides detailed information on using this addon.
 
 ## Contributing
 
