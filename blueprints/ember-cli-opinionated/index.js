@@ -11,7 +11,6 @@ module.exports = {
     var packages = [
       'ember-cli-autoprefixer',
       'ember-cli-blanket',
-      'ember-cli-sass-pods',
       'ember-cpm',
       'ember-feature-flags',
       { name: 'ember-metrics', target: '0.1.5' },
@@ -32,6 +31,7 @@ module.exports = {
 
     var prompts = [
       extend({ message: 'Would you like to enhance your ember-cli-opinionated setup?', packages: packages }, updatePrompt),
+      extend({ message: 'Pods?', packages: ['ember-cli-sass-pods'] }, updatePrompt),
       extend({ message: 'Analytics?', packages: ['ember-e3'] }, updatePrompt),
       extend({ message: 'Mobile-Friendly?', packages: ['ember-gestures'] }, updatePrompt),
       extend({ message: 'Material Design?', packages: ['ember-paper'] }, updatePrompt)
