@@ -45,22 +45,22 @@ module.exports = {
     var done = false;
 
     return prompts.reduce(function (prev, prompt, index) {
-      if (done) { // User said no to the first question, skip the rest
-        return prev;
-      }
       return prev.then(function (response) {
-        if (index) { // True if user is not on the first question
-          if (response.answer) { // User answered yes to the question
-            packages = packages.concat(prompt.packages);
+        if (!done) {
+          if (index) { // True if user is not on the first question
+            if (response.answer) { // User answered yes to the question
+              packages = packages.concat(prompt.packages);
+            }
+          } else if (!response.answer) {
+            done = true;
+            return this.addOpinionatedPackagesToProject(packages);
           }
-        } else if (!response.answer) {
-          done = true;
+          if (index < prompts.length - 1) { // Keep giving prompts until the last iteration
+            return this.ui.prompt(prompts[index + 1]);
+          }
           return this.addOpinionatedPackagesToProject(packages);
         }
-        if (index < prompts.length-1) { // Keep giving prompts until the last iteration
-          return this.ui.prompt(prompts[index+1]);
-        }
-        return this.addOpinionatedPackagesToProject(packages);
+        return prev;
       }.bind(this));
     }.bind(this), this.ui.prompt(prompts[0]));
   },
