@@ -21,6 +21,10 @@ code-generating machine. Watch your productivity increase and your architecture 
 
 ## Installation
 
+Note: This addon works best with the master branch of Ember-CLI (as of 1.13.8), thanks to the enhancements of this 
+[Pull Request](https://github.com/ember-cli/ember-cli/pull/4839). Ember-CLI-Opinionated has a fallback to work 
+with older versions (pre-2.0), but it is less reliable than the newer methods.
+
 The following command will install this addon and run the included blueprint to give you maximum awesomeness:
 
 `ember install ember-cli-opinionated`
