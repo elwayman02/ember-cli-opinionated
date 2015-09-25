@@ -42,28 +42,28 @@ This will execute the included blueprint, setting up your app for the win! If yo
 with some additional awesomeness, simply say yes to the first question to fill out a short questionnaire that will
 allow us to improve your app even more.
 
-Once you have installed this package, you will need to go through some minor setup to begin utilizing the included
-addons. Your app should be fully operational in the meantime, but the addons won't be usable until setup is completed.
+Once you have installed this package, you my need to go through some minor setup to begin utilizing the included
+addons. For the most part, however, you should be able to reap the benefits of each addon right away. 
 Please refer to the sections below and the individual READMEs for information on each addon's setup (where applicable).
 
 ## Compatibility
 
 Ember-CLI-Opinionated's blueprint relies on `addAddonsToProject`, a 
 [new feature](https://github.com/ember-cli/ember-cli/pull/4839) to Ember-CLI. For older Ember-CLI versions (<=1.13.8), 
-a polyfill has been provided by chaining `addAddonToProject`. However, there are some slight problems with 
+a polyfill has been provided by chaining `addAddonToProject` within the blueprint. However, there are some slight problems with 
 how that works, and some packages may not be properly saved to your `package.json` and `bower.json`. 
-So feel free to use this addon regardless, but check to make sure the dependencies are saved.
+Feel free to use this addon regardless, but check to make sure the dependencies are saved.
 
 Each of the included addons has its own compatibility with different versions of Ember, Ember-CLI, and so on. We
 recommend checking the individual repositories for more information to make sure your app is compatible with the latest
 versions of each project. The intent of this addon is to enhance a brand-new app generated with Ember-CLI, but
 that doesn't mean you can't juice up your existing application, either!
 
-As of now, Ember 1.13+ should be supported without issues. Earlier versions of Ember may also be supported, 
-but have not been explicitly tested. If you are on 1.12-, please test and let us know if there are issues.
+At this time, Ember 1.13+ should be supported by all included addons. Earlier versions of Ember may also be 
+supported, but they have not been explicitly tested. If you are on 1.12-, please test and let us know if there are issues.
 
 _Note: A [bug in Ember-CLI](https://github.com/ember-cli/ember-cli/issues/4876) causes npm to attempt 
-installing `ember-cli-sass` twice. This will throw a large number of concerning-looking errors to your console
+installing `ember-cli-sass` multiple times. This will throw a large number of concerning-looking errors to your console
 but should not cause any real problems with installation._
 
 ## What's Inside The Box?
