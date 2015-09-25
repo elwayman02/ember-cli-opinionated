@@ -32,8 +32,8 @@ module.exports = {
 
     var prompts = [
       extend({ message: 'Would you like to enhance your ember-cli-opinionated setup?', packages: packages }, updatePrompt),
-      extend({ message: 'Pods?', packages: ['ember-cli-sass-pods'] }, updatePrompt),
-      extend({ message: 'Analytics?', packages: ['ember-e3'] }, updatePrompt),
+      extend({ message: 'Organizing Your App Into Pods?', packages: ['ember-cli-sass-pods'] }, updatePrompt),
+      extend({ message: 'Analytics/Reports?', packages: ['ember-e3'] }, updatePrompt),
       extend({ message: 'Mobile Touch?', packages: ['ember-gestures'] }, updatePrompt),
       extend({ message: 'Material Design?', packages: ['ember-paper'] }, updatePrompt),
       extend({ message: 'Animations?', packages: ['liquid-fire'] }, updatePrompt)
@@ -66,7 +66,9 @@ module.exports = {
         }
         return prev;
       }.bind(this));
-    }.bind(this), this.ui.prompt(prompts[0]));
+    }.bind(this), this.ui.prompt(prompts[0])).then(function () {
+      this.ui.writeLine("Congratulations! You've enhanced your Ember application. Find out more at http://jhawk.co/ember-cli-opinionated");
+    }.bind(this));
   },
 
   addOpinionatedPackagesToProject: function (packages) {
