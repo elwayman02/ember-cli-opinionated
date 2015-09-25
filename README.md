@@ -73,9 +73,12 @@ new app development, as long as you are cognizant of this fact.
 The amount of additional setup needed to begin using the addon is judged for you. Our rating system is as follows:
 
 _No Setup_ - You can begin using this addon immediately without any additional configuration necessary.
+
 _Trivial Setup_ - You may have to add 1-2 easy lines of code to complete setup.
+
 _Minor Setup_ - A bit of configuration is required (usually in `config/environment.js`), but the process is 
 straightforward and explained well in their README.
+
 _Major Setup_ - A significant amount of work is needed to begin using this addon. Our goal is not to include
 any projects that would receive this rating, as it is counter-intuitive to the quick-start nature of this project.
 
