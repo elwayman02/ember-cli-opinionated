@@ -14,9 +14,9 @@ module.exports = {
       'ember-cli-sass',
       //'ember-cpm',
       'ember-feature-flags',
-      { name: 'ember-metrics', target: '0.1.5' },
+      'ember-metrics',
       'ember-moment',
-      { name: 'ember-responsive', target: '1.2.0' },
+      'ember-responsive',
       'ember-suave',
       'ember-truth-helpers'
     ];
