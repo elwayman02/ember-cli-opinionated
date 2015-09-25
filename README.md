@@ -215,7 +215,7 @@ _Additional Install: N/A_
 
 Comprehensive animation support for ambitious Ember applications. Replace your outlets and other HTMLbars helpers
 with the `liquid-fire` versions to enable support for adding transitional animations throughout your application.
-Their [interactive documentation](http://jhawk.co/liquid-fire-docs) provides detailed information on using this addon.
+The [interactive documentation](http://jhawk.co/liquid-fire-docs) provides detailed information on using this addon.
 
 ## Contributing
 
