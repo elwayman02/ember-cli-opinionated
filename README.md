@@ -1,5 +1,10 @@
 # Ember-CLI-Opinionated
 
+[![Ember Observer Score](http://emberobserver.com/badges/ember-cli-opinionated.svg)](http://emberobserver.com/addons/ember-cli-opinionated)
+[![Code Climate](https://codeclimate.com/github/elwayman02/ember-cli-opinionated/badges/gpa.svg)](https://codeclimate.com/github/elwayman02/ember-cli-opinionated)
+[![Codacy Badge](https://api.codacy.com/project/badge/9a2d8ae6b09646d78c6156b695ede9ff)](https://www.codacy.com/app/hawker-jordan/ember-cli-opinionated)
+[![Dependency Status](https://www.versioneye.com/user/projects/5605cf6d5a262f002200000b/badge.svg?style=flat)](https://www.versioneye.com/user/projects/5605cf6d5a262f002200000b)
+
 *The Enhanced Ember Application Blueprint*
 
 This addon is the Quick Start guide to the best tools the Ember community has to offer! Ember-CLI-Opinionated takes on 
