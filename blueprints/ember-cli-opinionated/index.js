@@ -16,7 +16,7 @@ module.exports = {
       'ember-feature-flags',
       { name: 'ember-metrics', target: '0.1.5' },
       'ember-moment',
-      'ember-responsive',
+      { name: 'ember-responsive', target: '1.2.0' },
       'ember-suave',
       'ember-truth-helpers'
     ];
@@ -34,7 +34,7 @@ module.exports = {
       extend({ message: 'Would you like to enhance your ember-cli-opinionated setup?', packages: packages }, updatePrompt),
       extend({ message: 'Pods?', packages: ['ember-cli-sass-pods'] }, updatePrompt),
       extend({ message: 'Analytics?', packages: ['ember-e3'] }, updatePrompt),
-      extend({ message: 'Mobile-Friendly?', packages: ['ember-gestures'] }, updatePrompt),
+      extend({ message: 'Mobile Touch?', packages: ['ember-gestures'] }, updatePrompt),
       extend({ message: 'Material Design?', packages: ['ember-paper'] }, updatePrompt),
       extend({ message: 'Animations?', packages: ['liquid-fire'] }, updatePrompt)
     ];
