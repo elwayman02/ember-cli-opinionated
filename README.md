@@ -42,7 +42,7 @@ This will execute the included blueprint, setting up your app for the win! If yo
 with some additional awesomeness, simply say yes to the first question to fill out a short questionnaire that will
 allow us to improve your app even more.
 
-Once you have installed this package, you my need to go through some minor setup to begin utilizing the included
+Once you have installed this package, you may need to go through some minor setup to begin utilizing the included
 addons. For the most part, however, you should be able to reap the benefits of each addon right away. 
 Please refer to the sections below and the individual READMEs for information on each addon's setup (where applicable).
 
