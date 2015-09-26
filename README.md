@@ -7,22 +7,22 @@
 
 *The Enhanced Ember Application Blueprint*
 
-This addon is the Quick Start guide to the best tools the Ember community has to offer! Ember-CLI-Opinionated takes on 
-common decisions you need to make to get the most out of your app and gives you an answer. The following questions 
-are all answered by this addon:
+This addon provides you with the best tools the Ember community has to offer! Ember-CLI-Opinionated takes on common 
+decisions you need to make to get the most out of your app and gives you definitive answers to your most burning questions:
 
 1. *SCSS* vs LESS vs CSS?
 2. How can we get code coverage?
 3. How do we put styles in our pods?
-4. How can we track app performance?
-5. What's the best way to do date parsing in Ember?
+4. How can we track performance and feature usage?
+5. What's the best way to do date parsing/formatting in Ember?
 6. How can we implement feature flags?
+7. When will Rick Rolling stop being a thing?
 
 ...and more!
 
-All you have to do is sit back, relax, and let Ember-CLI-Opinionated do all the hard work for you. When we're done,
-your app will be even better than a barebones Ember app (which is already pretty sweet!); it'll be a lean, mean,
-code-generating machine. Watch your productivity increase and your architecture meetings decrease, all at the same time!
+All you have to do is sit back, relax, and let Ember-CLI-Opinionated do the hard work. When it's done,
+you'll have the most badass skeleton app around; it'll be a lean, mean, code-generating machine! 
+Watch your productivity increase and your architecture meetings decrease, all at the same time.
 
 ## Installation
 
