@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-opinionated",
-  "version": "0.1.8",
+  "version": "0.2.0",
   "description": "An opinionated blueprint for ambitious Ember apps",
   "directories": {
     "doc": "doc",
