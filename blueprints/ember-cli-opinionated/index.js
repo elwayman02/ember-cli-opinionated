@@ -12,7 +12,7 @@ module.exports = {
       'ember-cli-autoprefixer',
       'ember-cli-blanket',
       'ember-cli-sass',
-      //'ember-cpm',
+      'ember-cpm',
       'ember-feature-flags',
       'ember-metrics',
       'ember-moment',
@@ -32,11 +32,12 @@ module.exports = {
 
     var prompts = [
       extend({ message: 'Would you like to enhance your ember-cli-opinionated setup?', packages: packages }, updatePrompt),
-      extend({ message: 'Organizing Your App Into Pods?', packages: ['ember-cli-sass-pods'] }, updatePrompt),
-      extend({ message: 'Analytics/Reports?', packages: ['ember-e3'] }, updatePrompt),
-      extend({ message: 'Mobile Touch?', packages: ['ember-gestures'] }, updatePrompt),
-      extend({ message: 'Material Design?', packages: ['ember-paper'] }, updatePrompt),
-      extend({ message: 'Animations?', packages: ['liquid-fire'] }, updatePrompt)
+      extend({ message: 'Organizing Your App Into Pods', packages: ['ember-cli-sass-pods'] }, updatePrompt),
+      extend({ message: 'Analytics/Reports', packages: ['ember-e3'] }, updatePrompt),
+      extend({ message: 'Testing', packages: ['ember-cli-mirage', 'ember-sinon-qunit', 'ember-try'] }, updatePrompt),
+      extend({ message: 'Mobile Touch', packages: ['ember-gestures'] }, updatePrompt),
+      extend({ message: 'Material Design', packages: ['ember-paper'] }, updatePrompt),
+      extend({ message: 'Animations', packages: ['liquid-fire'] }, updatePrompt)
     ];
 
     return this.promptUserForOpinions(packages, prompts);
@@ -60,7 +61,9 @@ module.exports = {
             this.ui.writeLine('Tell us what extra features your app needs:');
           }
           if (index < prompts.length - 1) { // Keep giving prompts until the last iteration
-            return this.ui.prompt(prompts[index + 1]);
+            var nextPrompt = prompts[index + 1];
+            nextPrompt.message += ' (' + nextPrompt.packages.join(', ') + ')?';
+            return this.ui.prompt(nextPrompt);
           }
           return this.addOpinionatedPackagesToProject(packages);
         }

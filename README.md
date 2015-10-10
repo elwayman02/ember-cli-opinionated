@@ -88,71 +88,77 @@ _Major Setup_ - A significant amount of work is needed to use this addon. Our go
 any projects that would receive this rating, as it is counter-intuitive to the quick-start nature of this project.
 
 ### [ember-cli-autoprefixer](http://jhawk.co/ember-cli-autoprefixer)
+Runs the styles of your Ember CLI application through [`autoprefixer`](http://jhawk.co/autoprefixer-js).
+
 _No Setup_
 
 _Additional Install: N/A_
 
-Runs the styles of your Ember CLI application through [`autoprefixer`](http://jhawk.co/autoprefixer-js).
-
 ### [ember-cli-blanket](http://jhawk.co/ember-cli-blanket)
-_Minor Setup_
-
-_Additional Install: [`blanket`](http://jhawk.co/blanket-js)_
-
 Wraps Blanket.js to provide code coverage for Ember apps. Easy integration with
 [`ember-cli-pretender`](http://jhawk.co/ember-cli-pretender) or [`ember-cli-mirage`](http://jhawk.co/ember-cli-mirage).
 The [README](https://github.com/sglanzer/ember-cli-blanket/blob/master/README.md) has details on configuration of the addon.
 
+_Minor Setup_
+
+_Additional Install: [`blanket`](http://jhawk.co/blanket-js)_
+
+### [ember-cli-mirage](http://jhawk.co/ember-cli-mirage)
+**Enhanced: Testing**
+
+Client-side server for mocking API calls for testing & development. The project's 
+[documentation](http://www.ember-cli-mirage.com/docs/v0.1.x/) has thorough instructions on setting up the mock server.
+
+_Minor Setup_
+
+_Additional Install: [Faker](http://jhawk.co/fakerjs), [lodash](http://jhawk.co/lodashjs), & [pretender](http://jhawk.co/pretenderjs)_
+
 ### [ember-cli-sass-pods](http://jhawk.co/ember-cli-sass-pods)
 **Enhanced: Pods**
+
+Enables usage of SCSS styles in pod directories. Also includes generators for these files!
 
 _Trivial Setup_
 
 _Additional Install: [`ember-cli-sass`](http://jhawk.co/ember-cli-sass)_
 
-Enables usage of SCSS styles in pod directories. Also includes generators for these files!
-
 ### [ember-cpm](http://jhawk.co/ember-cpm)
+Provides Computed Property Macros, including
+[Composable Macros](https://github.com/cibernox/ember-cpm/blob/master/README.md#composable-computed-property-macros)!
+
 _No Setup_
 
 _Additional Install: N/A_
-
-_Note: `ember-cpm` is not currently installed by ECO, pending its [update](https://github.com/cibernox/ember-cpm/pull/125)
-to Ember 2.x compatibility._
-
-Provides Computed Property Macros, including
-[Composable Macros](https://github.com/cibernox/ember-cpm/blob/master/README.md#composable-computed-property-macros)!
 
 ### [ember-e3](http://jhawk.co/ember-e3)
 **Enhanced: Analytics**
 
+An Ember-first data visualization library that combines d3-like math with Ember's "data down/actions up" data binding
+paradigm. Supports rendering to both Canvas _and_ SVG!
+
 _No Setup_
 
 _Additional Install: N/A_
-
-An Ember-first data visualization library that combines d3-like math with Ember's "data down/actions up" data binding
-paradigm. Supports rendering to both Canvas _and_ SVG!
 
 _Note: This is a beta product that is still a WIP, with many more features on the way. Additionally, it only supports
 Ember 1.13+, sorry!_
 
 ### [ember-feature-flags](http://jhawk.co/ember-feature-flags)
+Provides an injected `features` property to your routes, controllers, and components.
+The [README](https://github.com/kategengler/ember-feature-flags/blob/master/README.md) details the easy ENV config.
+
 _Minor Setup_
 
 _Additional Install: N/A_
 
-Provides an injected `features` property to your routes, controllers, and components.
-
-The [README](https://github.com/kategengler/ember-feature-flags/blob/master/README.md) details the easy ENV config.
-
 ### [ember-gestures](http://jhawk.co/ember-gestures)
 **Enhanced: Mobile-Friendly**
+
+Provides gesture and mobile support for Ember applications.
 
 _Trivial Setup_
 
 _Additional Install: [`hammer.js`](http://jhawk.co/hammer-js-repo) & [`hammer-time`](http://jhawk.co/hammer-time-js)_
-
-Provides gesture and mobile support for Ember applications.
 
 _Note: `ember-gestures` relies on the yet-to-be-released 2.1.x version of `hammer.js`. In order for this package to work
 properly, you must install the latest `develop` branch from their repository:_
@@ -160,70 +166,88 @@ properly, you must install the latest `develop` branch from their repository:_
 `bower install --save runspired/hammer.js#develop`
 
 ### [ember-metrics](http://jhawk.co/ember-metrics)
+Allows you to send data to multiple analytics integrations without re-implementing new API. Check out the 
+[README](https://github.com/poteto/ember-metrics/blob/develop/README.md) for information on how to
+set up the instrumentation to your favorite analytics reporting tool.
+
 _Minor Setup_
 
 _Additional Install: N/A_
 
-Allows you to send data to multiple analytics integrations without re-implementing new API.
-
-Check out the [README](https://github.com/poteto/ember-metrics/blob/develop/README.md) for information on how to
-set up the instrumentation to your favorite analytics reporting tool.
-
 ### [ember-moment](http://jhawk.co/ember-moment)
+Provides template helpers and computed property macros for date parsing, as well as
+including `moment.js` as an ES6 module import.
+
 _No Setup_
 
 _Additional Install: [`ember-cli-moment-shim`](http://jhawk.co/ember-cli-moment-shim),
 [`moment`](http://jhawk.co/moment-js), & [`moment-timezone`](http://jhawk.co/moment-timezone)_
 
-Provides template helpers and computed property macros for date parsing, as well as
-including `moment.js` as an ES6 module import.
-
 ### [ember-paper](http://jhawk.co/ember-paper)
 **Enhanced: Material Design**
+
+An Ember-first implementation of Google's [Material Design](http://jhawk.co/google-md) spec. This is an ambitious
+project that does not yet fully support every part of the spec, but feel free to check out their
+[demo](http://jhawk.co/ember-paper-demo) to see how incredibly far they've gotten!
 
 _Trivial Setup_
 
 _Additional Install: [`ember-cli-sass`](http://jhawk.co/ember-cli-sass), [`hammerjs`](http://jhawk.co/hammer-js-repo)
  & [`matchMedia`](http://jhawk.co/match-media-polyfill)
 
-An Ember-first implementation of Google's [Material Design](http://jhawk.co/google-md) spec. This is an ambitious
-project that does not yet fully support every part of the spec, but feel free to check out their
-[demo](http://jhawk.co/ember-paper-demo) to see how incredibly far they've gotten!
-
 ### [ember-responsive](http://jhawk.co/ember-responsive)
-_No Setup_
-
-_Additional Install: N/A_
-
 Uses responsive media queries to inject screen layout information throughout Ember applications.
 Needs Polyfill for [compatibility](http://caniuse.com/#feat=matchmedia) with IE 8/9 or Opera Mini.
 
-### [ember-suave](http://jhawk.co/ember-suave)
 _No Setup_
 
 _Additional Install: N/A_
 
+### [ember-sinon-qunit](http://jhawk.co/ember-sinon-qunit)
+**Enhanced: Testing**
+
+Easy integration between [`sinon`](http://jhawk.co/sinonjs) and [`ember-qunit`](http://jhawk.co/ember-qunit).
+
+_No Setup_
+
+_Additional Install: [`ember-sinon`](http://jhawk.co/ember-sinon)
+
+### [ember-suave](http://jhawk.co/ember-suave)
 Enforce code styles using [`JSCS`](http://jhawk.co/js-cs). Defaults to the
 DockYard [JavaScript](https://github.com/dockyard/styleguides/blob/master/javascript.md) and
 [Ember](https://github.com/dockyard/styleguides/blob/master/ember.md) Style Guides, but rules are configurable.
 
-### [ember-truth-helpers](http://jhawk.co/ember-truth-helpers)
 _No Setup_
 
 _Additional Install: N/A_
 
-HTMLBars template helpers for additional truth logic in if and unless statements.
+### [ember-truth-helpers](http://jhawk.co/ember-truth-helpers)
+HTMLBars template helpers for additional truth logic in if and unless statements. Highly recommended by the Ember Core team!
+
+_No Setup_
+
+_Additional Install: N/A_
+
+### [ember-try](http://jhawk.co/ember-try)
+**Enhanced: Testing**
+
+Run tests against multiple bower dependencies, such as Ember or Ember-Data. Incredibly useful in 
+maintaining an upgrade path for your application!
+
+_No Setup_
+
+_Additional Install: N/A_
 
 ### [liquid-fire](http://jhawk.co/liquid-fire)
 **Enhanced: Animations**
 
-_Minor Setup_
-
-_Additional Install: N/A_
-
 Comprehensive animation support for ambitious Ember applications. Replace your outlets and other HTMLbars helpers
 with the `liquid-fire` versions to enable support for adding transitional animations throughout your application.
 The [interactive documentation](http://jhawk.co/liquid-fire-docs) provides detailed information on using this addon.
+
+_Minor Setup_
+
+_Additional Install: N/A_
 
 ## Contributing
 
@@ -231,7 +255,8 @@ The [interactive documentation](http://jhawk.co/liquid-fire-docs) provides detai
 
 ### Installation
 
-* `git clone` this repository
+* `git clone git@github.com:elwayman02/ember-cli-opinionated.git`
+* `cd ember-cli-opinionated`
 * `npm install`
 * `bower install`
 
