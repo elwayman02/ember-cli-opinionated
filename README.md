@@ -103,6 +103,16 @@ Wraps Blanket.js to provide code coverage for Ember apps. Easy integration with
 [`ember-cli-pretender`](http://jhawk.co/ember-cli-pretender) or [`ember-cli-mirage`](http://jhawk.co/ember-cli-mirage).
 The [README](https://github.com/sglanzer/ember-cli-blanket/blob/master/README.md) has details on configuration of the addon.
 
+### [ember-cli-mirage](http://jhawk.co/ember-cli-mirage)
+**Enhanced: Testing**
+
+_Minor Setup_
+
+_Additional Install: [Faker](http://jhawk.co/fakerjs), [lodash](http://jhawk.co/lodashjs), & [pretender](http://jhawk.co/pretenderjs)_
+
+Client-side server for mocking API calls for testing & development. The project's 
+[documentation](http://www.ember-cli-mirage.com/docs/v0.1.x/) has thorough instructions on setting up the mock server.
+
 ### [ember-cli-sass-pods](http://jhawk.co/ember-cli-sass-pods)
 **Enhanced: Pods**
 
@@ -116,9 +126,6 @@ Enables usage of SCSS styles in pod directories. Also includes generators for th
 _No Setup_
 
 _Additional Install: N/A_
-
-_Note: `ember-cpm` is not currently installed by ECO, pending its [update](https://github.com/cibernox/ember-cpm/pull/125)
-to Ember 2.x compatibility._
 
 Provides Computed Property Macros, including
 [Composable Macros](https://github.com/cibernox/ember-cpm/blob/master/README.md#composable-computed-property-macros)!
@@ -198,6 +205,15 @@ _Additional Install: N/A_
 Uses responsive media queries to inject screen layout information throughout Ember applications.
 Needs Polyfill for [compatibility](http://caniuse.com/#feat=matchmedia) with IE 8/9 or Opera Mini.
 
+### [ember-sinon-qunit](http://jhawk.co/ember-sinon-qunit)
+**Enhanced: Testing**
+
+_No Setup_
+
+_Additional Install: [`ember-sinon`](http://jhawk.co/ember-sinon)
+
+Easy integration between [`sinon`](http://jhawk.co/sinonjs) and [`ember-qunit`](http://jhawk.co/ember-qunit).
+
 ### [ember-suave](http://jhawk.co/ember-suave)
 _No Setup_
 
@@ -213,6 +229,20 @@ _No Setup_
 _Additional Install: N/A_
 
 HTMLBars template helpers for additional truth logic in if and unless statements.
+
+_No Setup_
+
+_Additional Install: N/A_
+
+### [ember-try](http://jhawk.co/ember-try)
+**Enhanced: Testing**
+
+_No Setup_
+
+_Additional Install: N/A_
+
+Run tests against multiple bower dependencies, such as Ember or Ember-Data. Incredibly useful in 
+maintaining an upgrade path for your application!
 
 ### [liquid-fire](http://jhawk.co/liquid-fire)
 **Enhanced: Animations**
