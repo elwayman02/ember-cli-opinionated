@@ -24,6 +24,8 @@ All you have to do is sit back, relax, and let ECO do the hard work. When it's d
 you'll have the most badass skeleton app around; it'll be a lean, mean, code-generating machine! 
 Watch your productivity increase and your architecture meetings decrease, all at the same time.
 
+[![](https://i.vimeocdn.com/video/539171732_640x358.jpg)](https://vimeo.com/141975109)
+
 ## Installation
 
 Note: This addon works best with the master branch of Ember CLI (as of 1.13.8), thanks to the enhancements of this
