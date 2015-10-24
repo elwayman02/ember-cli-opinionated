@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "ember-cli": "ember-cli/ember-cli#master",
-    "ember-cli-release": "0.2.7",
+    "ember-cli-release": "0.2.8",
     "publish": "~0.5.0",
     "rsvp": "~3.1.0"
   },
