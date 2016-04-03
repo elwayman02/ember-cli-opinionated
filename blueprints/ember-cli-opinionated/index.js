@@ -17,6 +17,7 @@ module.exports = {
       'ember-metrics',
       'ember-moment',
       'ember-responsive',
+      'ember-route-action-helper',
       'ember-suave',
       'ember-truth-helpers'
     ];
@@ -32,9 +33,10 @@ module.exports = {
 
     var prompts = [
       extend({ message: 'Would you like to enhance your ember-cli-opinionated setup?', packages: packages }, updatePrompt),
-      extend({ message: 'Organizing Your App Into Pods', packages: ['ember-cli-sass-pods'] }, updatePrompt),
+      // extend({ message: 'Organizing Your App Into Pods', packages: ['ember-cli-sass-pods'] }, updatePrompt),
       extend({ message: 'Analytics/Reports', packages: ['ember-e3'] }, updatePrompt),
-      extend({ message: 'Testing', packages: ['ember-cli-mirage', 'ember-sinon-qunit', 'ember-try'] }, updatePrompt),
+      extend({ message: 'Testing', packages: ['ember-cli-mirage', 'ember-sinon-qunit'] }, updatePrompt),
+      // extend({ message: 'Internationalization (i18n)', packages: ['ember-intl'] }, updatePrompt),
       extend({ message: 'Mobile Touch', packages: ['ember-gestures'] }, updatePrompt),
       extend({ message: 'Material Design', packages: ['ember-paper'] }, updatePrompt),
       extend({ message: 'Animations', packages: ['liquid-fire'] }, updatePrompt)
