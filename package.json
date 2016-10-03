@@ -27,7 +27,7 @@
     "ember-cli": "2.7.0",
     "ember-cli-release": "0.2.8",
     "publish": "~0.6.0",
-    "rsvp": "~3.2.1"
+    "rsvp": "~3.3.3"
   },
   "keywords": [
     "ember-addon",
